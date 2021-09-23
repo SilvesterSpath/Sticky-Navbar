@@ -98,8 +98,8 @@ body {
   background-image: url('./img/website.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
-  height: 100vh;
+  background-position: center;
+  height: 860px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
@@ -150,5 +150,11 @@ body {
 
   .container {
     width: 700px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero {
+    background-size: contain;
   }
 }
