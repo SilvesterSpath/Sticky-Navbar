@@ -59,6 +59,7 @@ body {
 
 .nav a {
   color: var(--secondary-color);
+  font-weight: bold;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -83,6 +84,15 @@ body {
   font-weight: bold;
 }
 
+.hero h1 {
+  padding-top: 265px;
+}
+
+.hero p {
+  margin-top: 150px;
+  transform: perspective(400px) rotatex(45deg);
+}
+
 .hero {
   position: relative;
   background-image: url('./img/website.jpg');
@@ -93,10 +103,10 @@ body {
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
   margin-bottom: 20px;
   z-index: -2;
+  opacity: 0.8;
 }
 
 .hero::after {
@@ -133,8 +143,12 @@ body {
   letter-spacing: 1.2px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .nav .container {
     justify-content: space-around;
+  }
+
+  .container {
+    width: 700px;
   }
 }
